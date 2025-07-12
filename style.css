@@ -1,63 +1,91 @@
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #0d0d0d;
-  color: #e2e8f0;
-  font-family: 'Space Mono', monospace;
-  line-height: 1.6;
+  font-family: 'Share Tech Mono', monospace;
+  color: #f4f4f4;
+  background-color: #000;
+  position: relative;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem;
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 header {
   text-align: center;
-  margin-bottom: 3rem;
+  padding: 40px 20px 20px;
 }
 
-.glow {
-  font-size: 3rem;
-  color: #0ff;
-  text-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #0ff;
+  object-fit: cover;
 }
 
-.tagline {
-  color: #888;
+.header-content h1 {
+  font-size: 2.5rem;
+  margin: 10px 0 5px;
+  color: #00ffff;
+}
+
+.header-content h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #ccc;
+}
+
+section {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  color: #00ffff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+section p,
+section li {
   font-size: 1rem;
-  font-style: italic;
+  line-height: 1.6;
 }
 
-h2 {
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin-bottom: 20px;
   border-left: 3px solid #0ff;
-  padding-left: 0.75rem;
-  color: #0ff;
 }
 
-.project-card {
-  background: #1a1a1a;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  border: 1px solid #333;
-  border-radius: 8px;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 0.5rem;
+.project a {
   color: #0ff;
   text-decoration: none;
 }
 
-.project-card a:hover {
-  text-decoration: underline;
-}
-
 footer {
   text-align: center;
-  margin-top: 4rem;
+  padding: 20px;
   font-size: 0.9rem;
-  color: #666;
+  background: #000;
+  color: #888;
+  border-top: 1px solid #111;
 }
